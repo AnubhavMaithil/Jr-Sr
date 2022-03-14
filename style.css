@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(./Gilroy-Bold.ttf);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  overflow: hidden;
+  
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 110%;
+    height: 110%;
+    z-index: 1;
+}
+
+
+
+#main{
+    position: relative;
+    padding: 35px;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(19, 19, 19); */
+    z-index: 2;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6vh;
+}
+#navl,#navr{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#navl input{
+    padding: 5px;
+    border: none;
+    border-bottom: .1px solid rgba(245, 245, 245, 0.774);
+    background: none;
+    outline: none;
+    width: 30%;
+    font-size: 15px;
+    color: white;
+}
+#navl input::placeholder {
+    color: rgba(255, 255, 255, 0.726);
+}
+#navl i{
+    padding-left: 10px;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#navl i:hover{
+    text-shadow: 0 0 10px white;
+    font-size: 22px;
+}
+#navc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+#navc img{
+    width: 30%;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#navc img:hover{
+    filter: drop-shadow(0 0 25px #E50815);
+}
+#navr{
+    justify-content: right;
+}
+#navr h4{
+    color: rgba(255, 255, 255, 0.92);
+    padding-left: 20px;
+    padding: 7px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+#navr h4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform .25s ease-out;
+}
+#navr h4:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+#navr #pic{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    background-image: url(https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1685&q=80);
+    background-size: cover;
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#navr #pic:hover{
+    box-shadow: 0 0 20px white;
+}
+
+
+#hero{
+    display: flex;
+    margin-top: 5vh;
+    width: 100%;
+    height: 80vh;
+}
+
+
+#herol{
+    width: 7%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#herol a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+#herol h3{
+    padding: 7px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+#herol h3:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform .25s ease-out;
+}
+#herol h3:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+#heror{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 93%;
+    height: 100%;
+    padding: 0 5px;
+    
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 85%;
+    background-color: bisque;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#heror .one{
+    margin-bottom: 5%;
+}
+#heror .three{
+    margin-top: 5%;
+}
+
+.card h3{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding: 7px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.card h3:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform .15s ease-out;
+}
+.card h3:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+
+#a{
+    background-image: url(https://pbs.twimg.com/media/Ek8wtFjUUAAfdaj?format=jpg&name=large);
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#b{
+    background-image: url(https://i.ytimg.com/vi/vqk31oAfTG4/maxresdefault.jpg);
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#c{
+    background-image: url(https://cdn.flickeringmyth.com/wp-content/uploads/2019/03/Endgame-international-posters-1.jpg);
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#d{
+    background-image: url(https://images.unsplash.com/photo-1633187841127-8b3e776b6a41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    background-position: 60%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#e{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tommy-shelby-cillian-murphy-peaky-blinders-1569234705.jpg);
+    background-position: 80%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#f{
+    background-image: url(https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXo669NbNa2OdcIJSey4fSItf6j1y1HogA32MGO9QVyVBMLXMK3k3G0fRoi8tDWvCRkT3xzI5dNsz8IzgCO_dekk008j.jpg?r=489);
+    background-position: 45%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#g{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_.jpg);
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#h{
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMmVkMjgxN2QtMGUyOS00NDI4LWE1NmEtM2M4YWQxNjRjOTZhXkEyXkFqcGdeQW1hcmNtYW5u._V1_.jpg);
+    background-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+
+#a:hover,
+#b:hover,
+#c:hover,
+#d:hover,
+#e:hover,
+#f:hover,
+#g:hover,
+#h:hover{
+    width: 20%;
+}
+
+
+#vid{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#vid:hover{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 0 5px 1px cyan;
+    border: 2px solid black;
+}

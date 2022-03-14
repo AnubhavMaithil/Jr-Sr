@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix | In</title>
+</head>
+<body>
+
+
+    <div id="main">
+        <div id="nav">
+            <div id="navl">
+                <input type="text" placeholder="Search">
+                <i class="ri-search-line"></i>
+            </div>
+            <div id="navc">
+                <img src="logo.png" alt="">
+            </div>
+            <div id="navr">
+                <div id="pic"></div>
+                <h4>Anubhav Maithil</h4>
+            </div>
+        </div>
+
+        <div id="hero">
+            <div id="herol">
+                <a href="#"><h3>Home</h3></a>
+                <a href="#"><h3>Shows</h3></a>
+                <a href="#"><h3>Movies</h3></a>
+                <a href="#"><h3>Latest</h3></a>
+                <a href="#"><h3>My List</h3></a>
+            </div>
+            <div id="heror">
+                <div class="card three"><h4>Sci-Fi<br>&<br>Fantasy</h4></div>
+                <div class="card one">  <h4>Thriller</h4></div>
+                <div class="card two">
+                    <h3>Dramas</h3>
+                    
+                </div>
+                <div class="card three"><h4>Crime</h4></div>
+                <div class="card one">  <h4>Horror</h4></div>
+                <div class="card two">  <h4>History</h4></div>
+            </div>
+        </div>
+
+        <button id="vid">Pause</button>
+        
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <script src="script.js"></script>
+</body>
+</html>
