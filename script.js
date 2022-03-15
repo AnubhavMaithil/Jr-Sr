@@ -34,3 +34,20 @@ function playPause() {
         btn.innerHTML = "Play";
     }
 }
+
+
+
+var flag = 0;
+var profile = document.querySelector("#profile");
+var clk = document.querySelector(".profile");
+
+clk.addEventListener("click", function(){
+    if(flag === 0){
+        profile.style.top = "10%";
+        flag=1
+    }
+    else{
+        profile.style.top = "-20%";
+        flag=0;
+    }
+})
