@@ -23,8 +23,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 105%;
-    height: 105%;
+    width: 105vw;
+    height: 105vh;
     z-index: 1;
 }
 
