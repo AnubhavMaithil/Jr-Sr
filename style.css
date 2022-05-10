@@ -317,15 +317,15 @@ body {
 
 #profile{
     position: absolute;
-    right: 3%;
-    top: -20%;
+    right: 2.5%;
+    top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: right;
-    width: 10%;
-    height: 20%;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    width: 11%;
+    height: 0%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
 }
 #profile button{

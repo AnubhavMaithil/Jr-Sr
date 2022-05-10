@@ -4,7 +4,7 @@ var arr = [
     {title: "Sci-Fi<br>&<br>Fantasy", img: "c",index: "three"},
     {title: "Thriller", img: "d",index: "one"},
     {title: "Dramas", img: "e",index: "two"},
-    {title: "Crime", img: "f",index: "three",},
+    {title: "Crime", img: "f",index: "three"},
     {title: "Horror", img: "g",index: "one"},
     {title: "History", img: "h",index: "two"}
 ];
@@ -43,11 +43,11 @@ var clk = document.querySelector(".profile");
 
 clk.addEventListener("click", function(){
     if(flag === 0){
-        profile.style.top = "10%";
+        profile.style.height = "20%";
         flag=1
     }
     else{
-        profile.style.top = "-20%";
+        profile.style.height = "0%";
         flag=0;
     }
 })
